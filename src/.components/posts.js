@@ -6,7 +6,7 @@ export default function Posts() {
     useEffect(() => {
         const getPosts = async () => {
             const resp = await fetch(
-                'http://127.0.0.1:8787/posts'
+                'https://cow-media.psullivan.workers.dev/posts'
             );
             const postsResp = await resp.json();
             setPosts(postsResp.reverse());
